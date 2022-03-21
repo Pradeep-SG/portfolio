@@ -1,13 +1,207 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-image: url("../public/svg_files/wave-haikei.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: #EEEEEE;
+  text-decoration: none;
 }
+
+.nav-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+  left: 6%;
+  top: 50%;
+  margin-top: -25vh;
+  position: absolute;
+}
+
+.nav-div .nav-link {
+  color: #222831;
+  background-color: #EEEEEE;
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  box-sizing: content-box;
+  padding: 10px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+/* .nav-div .nav-link:hover {
+  background-color: #00ADB5;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transform: scale(1.04);
+} */
+
+.nav-desc {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #222831;
+}
+
+.nav-desc h3 {
+  background-color: #00ADB5;
+  min-height: 25px;
+  padding: 11px 10px;
+  position: relative;
+  left: -3px;
+  z-index: -1;
+  border-radius: 0 50px 50px 0;
+}
+
+.hire-me {
+  color: #222831;
+  text-align: right;
+  padding-top: 40px;
+  padding-right: 10%;
+}
+
+.hire-me h2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFF89A;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.hire-me h2:hover {
+  background-color: #EEEEEE;
+  transform: scale(1.02);
+}
+
+.top-div .hire-me {
+  margin: 0;
+  padding: 0;
+}
+
+.top-div {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 10% 0 0;
+}
+
+.main-content {
+  color: #EEEEEE;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.main-content h3 {
+  font-size: 30px;
+}
+
+.main-content h4 {
+  font-size: 20px;
+  max-width: 45%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+}
+
+.home h4 {
+  margin-top: 30px;
+}
+
+.heading, .heading-span {
+  transition: all 1s;
+}
+
+.heading:hover .heading-span{
+  color: #00ADB5;
+  
+}
+
+.bitmoji-img-div {
+  margin-top: 20px;
+  position: relative;
+}
+
+.bitmoji-img {
+  width: 200px;
+}
+
+.background-fill {
+  background-color: #EEEEEE;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 150px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.bitmoji-img:hover + .background-fill {
+  background-color: #00ADB5;
+}
+
+.resume-div {
+  margin-top: 30px;
+}
+
+.resume {
+  padding: 10px 20px;
+  background-color: #00ADB5;
+  color: #393E46;
+  font-weight: 700;
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.resume:hover {
+  background-color: #EEEEEE;
+  font-size: 16.5px;
+}
+
+/* .abs-div {
+  position: absolute;
+  bottom: 0;
+} */
+
+/* .img-bottom {
+} */
+
+.img-pc {
+  display: block;
+  width: 150px;
+  margin: 20px auto 0;
+  
+}
+
+/* .img-cloud {
+  width: 150px;
+  left: 20%;
+}
+
+.img-react {
+  width: 150px;
+  left: 70%;
+} */
