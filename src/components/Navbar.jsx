@@ -5,11 +5,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Portfolio from "./Portfolio";
-import Blog from "./Blog";
-import Contact from "./Contact";
 import { RiHomeFill } from "react-icons/ri";
 import { BsFillPersonFill } from "react-icons/bs";
 import { MdWorkOutline } from "react-icons/md";

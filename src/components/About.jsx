@@ -3,8 +3,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./Navbar";
 import HireMe from "./HireMe";
+import Bitmoji from "./Bitmoji";
+import Skills from "./Skills";
 import ParticleBackground from "./ParticleBackground";
-import bitmoji from "../images/pradeep-bitmoji.png";
 import Resume from "./Resume";
 
 function Home() {
@@ -15,7 +16,9 @@ function Home() {
 
   return (
     <div className="about">
-      <ParticleBackground />
+      <div className="bitmoji-nav-div" >
+        <Bitmoji />
+      </div>
       <Navbar />
       <div className="top-div">
         <Resume />
@@ -29,11 +32,8 @@ function Home() {
           <h4 data-aos="slide-up">A college student who is organized, collaborative, eager to learn, and has a year of valuable expertise in
           HTML, CSS, and various frameworks of JavaScript. Seeking an opportunity as a full stack developer to contribute to business performance. Whatever your needs are, I can pretty much take on any challenges.</h4>
         </div>
-        <div data-aos="zoom-out" className="bitmoji-img-div">
-          <img className="bitmoji-img" src={bitmoji} alt="bitmoji" />
-          <div className="background-fill"></div>
-        </div>
       </div>
+      <Skills />
     </div>
   );
 }

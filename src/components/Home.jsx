@@ -4,8 +4,8 @@ import "aos/dist/aos.css";
 import Navbar from "./Navbar";
 import HireMe from "./HireMe";
 import Resume from "./Resume";
+import Bitmoji from "./Bitmoji";
 import ParticleBackground from "./ParticleBackground";
-import bitmoji from "../images/pradeep-bitmoji.png";
 
 function Home() {
 
@@ -15,7 +15,6 @@ function Home() {
 
   return (
     <div className="home">
-      <ParticleBackground />
       <Navbar />
       <HireMe />
       <div className="main-content">
@@ -25,10 +24,7 @@ function Home() {
         <div>
           <h4 data-aos="slide-up">Passion for developing scalable web applications across the full stack, and I love what I do.</h4>
         </div>
-        <div data-aos="zoom-out" className="bitmoji-img-div">
-          <img className="bitmoji-img" src={bitmoji} alt="bitmoji" />
-          <div className="background-fill"></div>
-        </div>
+        <Bitmoji />
         <div className="resume-div">
           <Resume />
         </div>
