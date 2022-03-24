@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import HireMe from "./HireMe";
 import Resume from "./Resume";
 import Bitmoji from "./Bitmoji";
+import Media from "./Media";
 import ParticleBackground from "./ParticleBackground";
 
 function Home() {
@@ -29,6 +30,7 @@ function Home() {
           <Resume />
         </div>
       </div>
+      <Media />
     </div>
   );
 }
