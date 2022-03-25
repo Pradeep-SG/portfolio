@@ -8,6 +8,7 @@ import Skills from "./Skills";
 import Media from "./Media";
 import ParticleBackground from "./ParticleBackground";
 import Resume from "./Resume";
+import FooterBg from "./FooterBg";
 
 function Home() {
 
@@ -36,6 +37,7 @@ function Home() {
       </div>
       <Skills />
       <Media />
+      <FooterBg />
     </div>
   );
 }

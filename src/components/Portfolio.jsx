@@ -6,9 +6,10 @@ import HireMe from "./HireMe";
 import Bitmoji from "./Bitmoji";
 import Skills from "./Skills";
 import Media from "./Media";
-import Project from "./Project";
 import ParticleBackground from "./ParticleBackground";
 import Resume from "./Resume";
+import FooterBg from "./FooterBg";
+import ProjectDiv from "./ProjectDiv";
 
 function Home() {
 
@@ -27,11 +28,8 @@ function Home() {
         <HireMe />
       </div>
       <h2 className="project-heading">Projects</h2>
-      <div className="main-content-portfolio">
-        <Project className="one" />
-        <Project />
-        <Project/>
-      </div>
+      <ProjectDiv />
+      <FooterBg />
       <Media />
     </div>
   );

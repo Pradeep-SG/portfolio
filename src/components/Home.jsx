@@ -7,6 +7,7 @@ import Resume from "./Resume";
 import Bitmoji from "./Bitmoji";
 import Media from "./Media";
 import ParticleBackground from "./ParticleBackground";
+import FooterBg from "./FooterBg";
 
 function Home() {
 
@@ -31,6 +32,7 @@ function Home() {
         </div>
       </div>
       <Media />
+      <FooterBg />
     </div>
   );
 }
