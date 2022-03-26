@@ -327,6 +327,10 @@ a {
   color: #00ADB5;
 }
 
+.project-div p {
+  margin-bottom: 20px;
+}
+
 .project-img-div {
   margin: 20px 0;
 }
@@ -359,7 +363,7 @@ a {
   display: grid;
   place-content: center;
   padding: 7px;
-  font-size: 20px;
+  font-size: 30px;
   border-radius: 50%;
   transition: all 0.7s;
 }
@@ -368,6 +372,159 @@ a {
   background-color: #00ADB5;
   color: #222831;
 }
+
+.blog-heading {
+  font-size: 40px;
+  color: #EEEEEE;
+  width: max-content;
+  margin: 40px auto;
+}
+
+.contact-div {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  color: #EEEEEE;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 100px;
+  padding-right: 5%;
+  font-size: 20px;
+}
+
+.get-in-touch h3 {
+  font-size: 30px;
+  color: #00ADB5;
+}
+
+.get-in-touch a:hover {
+  color: #00ADB5;
+}
+
+.get-in-touch a span {
+  margin-right: 20px;
+  position: relative;
+  top: 1.5px;
+}
+
+.form-div {
+  width: 30vw;
+  background-color: rgba(34, 40, 49, 0.7);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.form-div *::placeholder {
+  font-size: 18px;
+}
+
+.form-div input,
+.form-div button,
+.form-div textarea {
+  font-size: 18px;
+  display: block;
+  margin-top: 30px;
+  color: #EEEEEE;
+  transition: all 0.5s;
+}
+
+.form-div textarea {
+  width: 50%;
+  height: auto;
+  background: none;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: #00ADB5;
+  resize: none;
+  padding-left: 10px;
+}
+
+.form-div input{
+  width: 50%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: #00ADB5;
+  padding: 10px 10px;
+}
+
+.form-div p{
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #FFF89A;
+  font-size: 12px;
+}
+
+.form-div input:focus,
+.form-div textarea:focus {
+  outline: none;
+  width: 100%;
+  border-left: 1px solid;
+  border-color: #00ADB5;
+}
+
+.btn-submit {
+  background-color: #00ADB5;
+  color: #222831 !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px !important;
+  font-weight: 600;
+  display: grid;
+  place-content: center;
+}
+
+.btn-submit:hover {
+  background-color: #EEEEEE;
+  box-shadow: 0 0 10px 0 #00ADB5;
+}
+
+.right-form-div {
+  position: relative;
+}
+
+.response-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: #222831;
+}
+
+.response-div .done {
+  font-size: 70px;
+}
+
+.response-div.sent {
+  background-color: #00ADB5;
+}
+
+.response-div.failure {
+  background-color: #FF8080;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
