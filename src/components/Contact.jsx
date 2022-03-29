@@ -2,19 +2,14 @@ import React, {useEffect, useState, useRef} from "react";
 import { useForm } from 'react-hook-form';
 import { useSpring, animated } from 'react-spring';
 import emailjs from '@emailjs/browser';
-import Aos from "aos";
-import "aos/dist/aos.css";
 import Navbar from "./Navbar";
 import HireMe from "./HireMe";
 import Bitmoji from "./Bitmoji";
-import Skills from "./Skills";
-import Media from "./Media";
 import ParticleBackground from "./ParticleBackground";
 import Resume from "./Resume";
-import FooterBg from "./FooterBg";
-import ProjectDiv from "./ProjectDiv";
 import { RiLinkedinLine } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 import { MdDoneAll } from "react-icons/md";
 import { ImSad } from "react-icons/im";
 
@@ -49,26 +44,24 @@ function Home() {
     transform: response ? "scale(1)" : "scale(0)"
   });
 
-  useEffect(() => {
-    Aos.init({duration: 1000});
-  }, []);
-
-
   return (
     <div className="contact">
+      <ParticleBackground />
       <div className="bitmoji-nav-div" >
         <Bitmoji />
       </div>
       <Navbar />
-      <div className="top-div">
+      <div data-aos="fade-in" className="top-div contact-top-div">
         <Resume />
-        <HireMe />
       </div>
       <h2 className="blog-heading">Contact</h2>
       <div className="contact-div">
         <div className="get-in-touch">
           <h3>Get in Touch</h3>
-          <p>pradeepsg612@gmail.com</p>
+          <a href="mailto:pradeepsg612@gmail.com">
+            <span><FiMail /></span>
+            pradeepsg612@gmail.com
+          </a>
           <a href="https://www.linkedin.com/in/pradeep-sg/" target="blank">
             <span><RiLinkedinLine /></span>
             LinkedIn
@@ -85,7 +78,7 @@ function Home() {
             style={responseStyle}
           >
             <div className="done"><MdDoneAll /></div>
-            <h3>Email received successfully</h3>
+            <h3>Email sent successfully</h3>
             <p>Will reach you sooner</p>
           </animated.div>
           }

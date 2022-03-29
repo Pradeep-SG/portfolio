@@ -1,4 +1,6 @@
 import React, {useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,6 +14,10 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 
 function App() {
+
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
 
   return (
     <div className="app">

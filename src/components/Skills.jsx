@@ -21,10 +21,11 @@ import { RiFileExcel2Line } from "react-icons/ri";
 import { SiTableau } from "react-icons/si";
 
 const Skills = () => {
+
   return (
     <div className="skill-div">
       <div>
-        <h3 data-aos="slide-up" className="skill">Web Development skills</h3>
+        <h3 data-aos="fade-in" className="skill">Web Development skills</h3>
       </div>
       <div className="skill-row frontend">
         <AiOutlineHtml5 className="skill-item"/>

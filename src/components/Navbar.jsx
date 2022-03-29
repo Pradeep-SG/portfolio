@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
 import { RiHomeFill } from "react-icons/ri";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -33,65 +33,66 @@ const Navbar = () => {
   for(var i=0; i<5; i++) falseArr.push(false);
 
   const [isHover, setIsHover] = useState(falseArr);
+  const [isActive, setIsActive] = useState(falseArr);
 
   function handleHoverFn(id) {
-    var tempArr = falseArr.splice();
+    let tempArr = falseArr.splice();
     tempArr[id] = true;
     setIsHover(tempArr);
   }
 
   return (
       <div className="nav-div">
-        <Link to="/">
+        <NavLink to="/">
           <NavItem
             id={0}
             isHover={isHover[0]}
             setIsHover={(id) => handleHoverFn(id)}
             icon={<RiHomeFill />}
             desc="Home"
-            scrollEff="fade-right"
+            classTitle="home-nav"
           />
-        </Link>
-        <Link to="/about">
+        </NavLink>
+        <NavLink to="/about">
           <NavItem
             id={1}
             isHover={isHover[1]}
             setIsHover={(id) => handleHoverFn(id)}
             icon={<BsFillPersonFill />}
             desc="About"
-            scrollEff="fade-left"
+            classTitle="about-nav"
           />
-        </Link>
-        <Link to="/portfolio">
+        </NavLink>
+        <NavLink to="/portfolio">
           <NavItem
             id={2}
             isHover={isHover[2]}
             setIsHover={(id) => handleHoverFn(id)}
             icon={<MdWorkOutline />}
             desc="Portfolio"
-            scrollEff="fade-right"
+            classTitle="portfolio-nav"
           />
-        </Link>
-        <Link to="/blog">
+        </NavLink>
+        <NavLink to="/blog">
           <NavItem
             id={3}
             isHover={isHover[3]}
             setIsHover={(id) => handleHoverFn(id)}
             icon={<FaBloggerB />}
             desc="Blog"
-            scrollEff="fade-left"
+            classTitle="blog-nav"
           />
-        </Link>
-        <Link to="/contact">
+        </NavLink>
+        <NavLink to="/contact">
           <NavItem
             id={4}
             isHover={isHover[4]}
             setIsHover={(id) => handleHoverFn(id)}
             icon={<SiMinutemailer />}
             desc="Contact"
-            scrollEff="fade-right"
+            classTitle="contact-nav"
           />
-        </Link>
+        </NavLink>
         </div>
   )
 }

@@ -27,12 +27,13 @@ const Project = ({imgUrl, title, desc, live, github}) => {
           className="project-img-div"
           style={blurStyle}
         >
-          <img src={imgUrl} alt="Advice Generator" 
+          <img src={imgUrl} alt={title}
+            className="project-img"
             onMouseOver={() => isProjectHover(true)}
             onMouseLeave={() => isProjectHover(false)}
           />
         </animated.div>
-        <p>{desc}</p>
+        <p className="desc">{desc}</p>
         <animated.div
           style={zoomInStyle}
           className="links"

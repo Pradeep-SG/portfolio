@@ -1,6 +1,4 @@
-import React, {useEffect} from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 import Navbar from "./Navbar";
 import HireMe from "./HireMe";
 import Resume from "./Resume";
@@ -11,12 +9,9 @@ import FooterBg from "./FooterBg";
 
 function Home() {
 
-  useEffect(() => {
-    Aos.init({duration: 1000});
-  }, []);
-
   return (
     <div className="home">
+      <ParticleBackground />
       <Navbar />
       <HireMe />
       <div className="main-content">

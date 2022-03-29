@@ -4,8 +4,8 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Resume = () => {
   return (
-    <div data-aos="fade-in">
-      <a className="resume" href={pdf} target="_blank">My Resume &nbsp;<FiArrowUpRight /></a>
+    <div>
+      <a className="resume" href={pdf} target="_blank">My Resume &nbsp;<i><FiArrowUpRight /></i></a>
     </div>
   )
 }
