@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from "../images/Resume-Analyst.pdf";
+import pdf from "../images/Resume-Full_Stack.pdf";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const Resume = () => {

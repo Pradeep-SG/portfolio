@@ -16,14 +16,14 @@ const ProjectDiv = () => {
         <Project 
           imgUrl={epistleImg}
           title="Mern Epistle"
-          desc="Description of Epistle"
+          desc="Simple note taking application connected to the database. Stack used - MERN"
           live="https://pradeepsg-epistle-mern.herokuapp.com/"
           github="https://github.com/Pradeep-SG/MERN-Epistle"
         />
         <Project 
           imgUrl={todoImg}
           title="ToDo List"
-          desc="Description of toDo"
+          desc="A ToDo list application running with Express.js, MongoDB at backend and EJS."
           live="https://pradeepsg-todolist.herokuapp.com/"
           github="https://github.com/Pradeep-SG/todo-list"
         />
@@ -32,7 +32,7 @@ const ProjectDiv = () => {
         <Project 
           imgUrl={adviceImg}
           title="Advice Generator"
-          desc="Description of Advice"
+          desc="Random advice generator with API calls and React.js at frontend."
           live="https://pradeep-sg.github.io/advice-generator-reactjs/"
           github="https://github.com/Pradeep-SG/advice-generator-reactjs"
         />
@@ -41,14 +41,14 @@ const ProjectDiv = () => {
         <Project 
           imgUrl={spliterImg}
           title="Spliter"
-          desc="Description of Spliter"
+          desc="This is a simple React application for spliting bills with tip%."
           live="https://pradeep-sg.github.io/spliter/"
           github="https://github.com/Pradeep-SG/spliter"
         />
         <Project 
           imgUrl={newsLetterImg}
           title="NewLetter SignUp"
-          desc="Description of newsletter"
+          desc="Newsletter registration application with mailchimp API and Express.js at backend."
           live="https://pradeepsg-newsletter.herokuapp.com/"
           github="https://github.com/Pradeep-SG/newsletter-signup"
         />
@@ -57,7 +57,7 @@ const ProjectDiv = () => {
         <Project 
           imgUrl={simonImg}
           title="Simon Game"
-          desc="Description of Simon"
+          desc="Memory game done using jQuery framework, build on HTML, CSS."
           live="https://pradeep-sg.github.io/simon-game/"
           github="https://github.com/Pradeep-SG/simon-game"
         />
@@ -66,14 +66,14 @@ const ProjectDiv = () => {
         <Project 
           imgUrl={drumKitImg}
           title="DrumKit"
-          desc="Description of Drum kit"
+          desc="JavaScript beginner project to learn about keyboard and mouse event listeners."
           live="https://pradeep-sg.github.io/drumkit/"
           github="https://github.com/Pradeep-SG/drumkit"
         />
         <Project 
           imgUrl={tindogImg}
           title="TinDog"
-          desc="Description of tindog"
+          desc="TinDog is a mockup website done using pure Bootstrap v5."
           live="https://pradeep-sg.github.io/tindog/"
           github="https://github.com/Pradeep-SG/tindog"
         />

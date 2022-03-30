@@ -23,7 +23,7 @@ import { SiTableau } from "react-icons/si";
 const Skills = () => {
 
   return (
-    <div className="skill-div">
+    <div data-aos="zoom-in" className="skill-div">
       <div>
         <h3 data-aos="fade-in" className="skill">Web Development skills</h3>
       </div>

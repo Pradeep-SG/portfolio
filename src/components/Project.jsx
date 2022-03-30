@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useSpring, animated } from 'react-spring';
 import { FiExternalLink } from "react-icons/fi";
 import { AiOutlineGithub } from "react-icons/ai";
-import adviceImg from "../images/projects/Advice-generator.jpg";
 
 const Project = ({imgUrl, title, desc, live, github}) => {
 
@@ -18,8 +17,8 @@ const Project = ({imgUrl, title, desc, live, github}) => {
   });
 
   return (
-    <div>
       <div
+        data-aos="zoom-in"
         className="project-div"
       >
         <h3>{title}</h3>
@@ -52,7 +51,6 @@ const Project = ({imgUrl, title, desc, live, github}) => {
         </a>
         </animated.div>
       </div>
-    </div>
   )
 }
 

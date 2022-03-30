@@ -1,19 +1,29 @@
-import React, {useEffect, useState, useRef} from "react";
+import React, { useState, useEffect, useRef} from "react";
 import { useForm } from 'react-hook-form';
 import { useSpring, animated } from 'react-spring';
 import emailjs from '@emailjs/browser';
 import Navbar from "./Navbar";
-import HireMe from "./HireMe";
 import Bitmoji from "./Bitmoji";
-import ParticleBackground from "./ParticleBackground";
 import Resume from "./Resume";
 import { RiLinkedinLine } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import { BsMedium } from "react-icons/bs";
 import { MdDoneAll } from "react-icons/md";
 import { ImSad } from "react-icons/im";
 
 function Home() {
+
+  const [isLoad, setIsLoad] = useState(false);
+
+  const loadStyle = useSpring({
+    delay: 300,
+    opacity: isLoad ? "1" : "0"
+  });
+
+  useEffect(() => {
+    setIsLoad(true);
+  }, []);
 
   const form = useRef();
 
@@ -45,8 +55,10 @@ function Home() {
   });
 
   return (
-    <div className="contact">
-      <ParticleBackground />
+    <animated.div
+      style={loadStyle}
+      className="contact"
+    >
       <div className="bitmoji-nav-div" >
         <Bitmoji />
       </div>
@@ -69,6 +81,10 @@ function Home() {
           <a href="https://github.com/Pradeep-SG" target="blank">
             <span><FaGithub /></span>
             GitHub
+          </a>
+          <a href="https://medium.com/@pradeepsg612" target="blank">
+            <span><BsMedium /></span>
+            Medium
           </a>
         </div>
         <div className="right-form-div">
@@ -115,8 +131,7 @@ function Home() {
           </form>
         </div>
       </div>
-      
-    </div>
+    </animated.div>
   );
 }
 

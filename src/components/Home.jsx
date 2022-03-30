@@ -4,14 +4,12 @@ import HireMe from "./HireMe";
 import Resume from "./Resume";
 import Bitmoji from "./Bitmoji";
 import Media from "./Media";
-import ParticleBackground from "./ParticleBackground";
 import FooterBg from "./FooterBg";
 
 function Home() {
 
   return (
     <div className="home">
-      <ParticleBackground />
       <Navbar />
       <HireMe />
       <div className="main-content">

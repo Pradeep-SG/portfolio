@@ -1,9 +1,8 @@
-import React, {useEffect} from "react";
+import React from "react";
 import Navbar from "./Navbar";
 import HireMe from "./HireMe";
 import Bitmoji from "./Bitmoji";
 import Media from "./Media";
-import ParticleBackground from "./ParticleBackground";
 import Resume from "./Resume";
 import FooterBg from "./FooterBg";
 import ProjectDiv from "./ProjectDiv";
@@ -12,7 +11,6 @@ function Home() {
 
   return (
     <div className="portfolio">
-      <ParticleBackground />
       <div className="bitmoji-nav-div" >
         <Bitmoji />
       </div>
