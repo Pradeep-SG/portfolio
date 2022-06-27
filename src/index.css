@@ -115,6 +115,7 @@ a {
   display: inline-block;
   padding: 10px 20px;
   background-color: #FFF89A;
+  color: #222831;
   border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
@@ -185,6 +186,7 @@ a {
 .bitmoji-img-div {
   margin-top: 20px;
   position: relative;
+  z-index: 2;
 }
 
 .bitmoji-img {
@@ -713,6 +715,9 @@ a {
   }
 
 @media (max-width: 1150px) {
+  .particle-background {
+    display: none;
+  }
   .contact-div {
     flex-direction: column;
     align-items: center;
@@ -766,6 +771,9 @@ a {
 }
 
 @media (max-device-width: 1150px) {
+  .particle-background {
+    display: none;
+  }
   .nav-div {
     box-sizing: content-box;
     margin: 0 auto;

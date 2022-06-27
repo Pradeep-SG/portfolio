@@ -1,14 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HireMe = () => {
   return (
-    <Link to="/contact">
     <div data-aos="fade-in" className="hire-me">
-      <h2>Hire me</h2>
+      <Link to="/contact">
+        <h2>Hire me</h2>
+      </Link>
     </div>
-    </Link>
-  )
+  );
 };
 
-export default HireMe
+export default HireMe;
